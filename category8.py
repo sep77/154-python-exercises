@@ -58,11 +58,16 @@ sampleDict = {
 }
 
 # 72- keys to extract
+
 keys = ["name", "salary"]
 
+# first way
 new_dict = {k: sampleDict[k] for k in keys}
 print(new_dict)
 
+# second way
+extract_keys = {k: v for (k, v) in sampleDict.items() if k in keys}
+print(extract_keys)
 print("\n")
 
 # 73- Delete set of keys from a dictionary.
