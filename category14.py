@@ -28,7 +28,7 @@ side3 = int(input("side3:"))
 
 semi_perimeter = (side1 + side2 + side3) / 2
 triangle_area = (semi_perimeter * (semi_perimeter - side1) * (semi_perimeter - side2) *
-(semi_perimeter - side3)) ** 0.5
+(semi_perimeter - side3)) ** 0.5 
 
 print(f"the area of triangle is {triangle_area}")
 """
@@ -197,8 +197,8 @@ if number > 1:
             print(number, "is not a prime number.")
             print(x, "times", round(number/x), "is", number)
             break
-    else:
-        print(number, "is a prime number.")
+        else:
+            print(number, "is a prime number.")
 
 
 else:
